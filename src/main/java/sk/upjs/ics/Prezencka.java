@@ -1,4 +1,11 @@
 package sk.upjs.ics;
 
-public record Prezencka() {
+import java.time.LocalDateTime;
+import java.util.Set;
+
+public record Prezencka(
+        Long id,
+        LocalDateTime datum,
+        Predmet predmet,
+        Set<Student> zoznamStudentov) {
 }

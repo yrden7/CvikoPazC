@@ -1,4 +1,15 @@
 package sk.upjs.ics;
 
-public record Predmet() {
+import lombok.With;
+
+import java.util.Set;
+
+@With
+public record Predmet
+        (Long id,
+        String name,
+        int yearsOfStudies,
+        Set<Student> students)
+{
+
 }
