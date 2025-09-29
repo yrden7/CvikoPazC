@@ -5,7 +5,7 @@ import java.util.Set;
 public class StudentService {
     private Set<Student> students;
 
-    public double ratio() {
+    public PomerGenderov pomer() {
         int pocetM = 0;
         int pocetZ = 0;
         int pocetMutant = 0;
@@ -27,7 +27,6 @@ public class StudentService {
 
         }
         PomerGenderov pm = new PomerGenderov(pocetM,pocetZ,pocetMutant);
-        return pm.pomer();
-
+        return pm;
     }
 }
